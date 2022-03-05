@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Comment</th>
+            </thead>
+            <% entries.forEach(function(entry){ %>
+                <tr class="user">
+                    <td><%= entry.name %></td>
+                    <td><%= entry.email %></td>
+                    <td><%= entry.comment %></td>
+                </tr>
+           <% }) %>
+        </table>
+    </div>
+    
+    
+</body>
+</html>
